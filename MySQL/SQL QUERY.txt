@@ -1,0 +1,18 @@
+INSERT INTO customers (Title, FirstName, Surname, Mobile, Email_Address,address_id) VALUES ('Mx', 'Carrick','Glen','0863762123','carrick.glen.2019@mumail.ie','4')
+
+INSERT INTO customers (Title, FirstName, Surname, Mobile, Email_Address,address_id) VALUES ('Miss', 'Erika','Solonga','0863765223','ericka.solonga.2018@mumail.ie','4')
+
+
+UPDATE customers SET Title = 'Miss' WHERE Title = 'Ms'
+UPDATE customers SET Title = 'Mister' WHERE Title = 'Mr'
+UPDATE customers SET Email_Address = 'kobe.lebron.2017@mumail.ie' WHERE Email_Address = 'kobe.bryant.2016@mumail.ie'
+UPDATE address SET Address_Line_1 = '4 Red Lane' WHERE Address_Line_1 = '4 red Lane'
+UPDATE address SET Town = 'Calry' WHERE Town = 'Blanchardstown'
+UPDATE shipping SET Town = 'Baldoyle' WHERE Town = 'Ballymun'
+UPDATE shipping SET Shipping_Line_1 = '4 Green Lane' WHERE Shipping_Line_1 = '4 red Lane'
+
+
+DELETE FROM customers WHERE id = '5'
+DELETE FROM address WHERE County = 'Kildare'
+DELETE FROM shipping WHERE EirCode = 'D1 HE14'
+
